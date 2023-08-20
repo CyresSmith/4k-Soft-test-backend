@@ -38,8 +38,8 @@ const registerUser = async (req, res) => {
   const verificationEmail = {
     to: email,
     subject: 'Verification email',
-    // html: `<a target="_blank" href="http://localhost:5173/verify/${verificationToken}" >Click here to verify your email</a>`,
-    html: `<a target="_blank" href="https://4k-soft-test.vercel.app/verify/${verificationToken}" >Click here to verify your email</a>`,
+    html: `<a target="_blank" href="http://localhost:5173/verify/${verificationToken}" >Click here to verify your email</a>`,
+    // html: `<a target="_blank" href="https://4k-soft-test.vercel.app/verify/${verificationToken}" >Click here to verify your email</a>`,
   };
 
   await sendEmail.nodemailer(verificationEmail);
